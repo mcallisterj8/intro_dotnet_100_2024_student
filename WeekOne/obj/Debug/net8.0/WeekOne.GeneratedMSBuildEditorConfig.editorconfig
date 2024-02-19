@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WeekOne
-build_property.ProjectDir = /home/jacobmc/Documents/jobs/western_technical_college/classes/spring_2024/intro_dotnet/repos/section_101/intro_dotnet_101_2024_student/WeekOne/
+build_property.ProjectDir = c:\Users\mcallisterj\Documents\repos\intro_dotnet_100_2024_student\WeekOne\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
