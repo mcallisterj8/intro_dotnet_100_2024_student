@@ -14,4 +14,7 @@ EmployeeWriter writer = new EmployeeWriter(writeDir);
 
 EmployeeOptions empOptions = new EmployeeOptions() {IncludePosition = true, IncludeBenefits = true};
 
-writer.Write(companyA.Employees[0], empOptions);
+Employee singleEmployee = companyA.Employees[0];
+
+// writer.Write(companyA.Employees[0], empOptions);
+writer.Write(singleEmployee, empOptions);
