@@ -16,4 +16,8 @@ public class Android : Phone, ISmartphone {
         }
         Console.WriteLine($"'{givenCommand}' is not a valid command.");
     }
+
+    public void CallLarryPage() {
+        Console.WriteLine("Calling Larry Page");
+    }
 }

@@ -8,5 +8,40 @@ Android phoneB = new Android {
             Model = "Samsung Galaxy 23"
         };
 
-Console.WriteLine(phoneA.Brand);
+// phoneA.UseAssistant("Check Weather"); // Valid command
+// phoneA.UseAssistant("Test"); // Invalid command
 
+ISmartphone phoneC = new iPhone {
+                    Brand = "Apple", 
+                    Model = "iPhone 12"
+                };
+
+ISmartphone phoneD = new Android {
+            Brand = "Google", 
+            Model = "Samsung Galaxy 20"
+        };
+
+phoneC.BrowseInternet(); // iPhone
+phoneD.BrowseInternet(); // Android
+
+phoneC = new Android {
+                Brand = "Google", 
+                Model = "Samsung Galaxy 16"
+            };
+
+Console.WriteLine("=================================");
+
+phoneC.BrowseInternet(); // Android
+phoneD.BrowseInternet(); // Android
+
+Console.WriteLine("=================================");
+List<ISmartphone> smartphoneList = new List<ISmartphone> {
+                                        phoneA,
+                                        phoneB,
+                                        phoneC,
+                                        phoneD
+                                    };
+
+foreach(ISmartphone phone in smartphoneList) {
+    phone.BrowseInternet();
+}

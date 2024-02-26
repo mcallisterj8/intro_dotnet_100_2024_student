@@ -16,4 +16,8 @@ public class iPhone : Phone, ISmartphone {
         }
         Console.WriteLine($"'{givenCommand}' is not a valid command.");
     }
+
+    public void CallSteveJobs() {
+        Console.WriteLine("Calling Steve Jobs");
+    }
 }
