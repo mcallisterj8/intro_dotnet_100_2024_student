@@ -45,3 +45,9 @@ List<ISmartphone> smartphoneList = new List<ISmartphone> {
 foreach(ISmartphone phone in smartphoneList) {
     phone.BrowseInternet();
 }
+
+
+decimal x = 0.1m;
+decimal y = 0.2m;
+
+Console.WriteLine(x + y);
