@@ -1,37 +1,18 @@
-﻿// Vehicle thingOne = new Airplane("United", 2000, 8);
-// Airplane thingTwo = new Airplane("Delta", 1000, 4);
-// Boat thingThree = new Boat(100, true, "sailboat");
-// Vehicle thingFour = new Vehicle();
+﻿
+//public Airplane(string airline, int maxAltitude, int numEngines) {
 
-// Console.WriteLine("===================================");
-
-// Console.WriteLine("thingThree length before: " + thingThree.Length);
-// thingThree.Length = 400;
-// Console.WriteLine("thingThree length after: " + thingThree.Length);
-
-// Vehicle[] arr = {thingOne, thingTwo, thingThree, thingFour};
-// for(int i = 0; i < arr.Length; i++){
-//     arr[i].Drive();
-// }
-
-// foreach(Vehicle elem in arr){
-//     elem.Drive();
-// }
-
-
-// thingOne.DeployLandingGear();
-// thingTwo.DeployLandingGear();
-
-//==========================================================
-
-
-decimal x = 32.44m;
-ElectricCar bolt = new ElectricCar("ABC-123", 4, 100);
-
-
-
-if(bolt.HasCharge()){
-    //true
-}else{
-    //false
+// Airplane planeA = new Airplane("Delta", 1200, 8);
+Airplane planeA = new Airplane("Delta", 1200, 8, "Lexi");
+if(planeA.Airline == null){
+    Console.WriteLine($"planeA airline: null");
+} else {
+    Console.WriteLine($"planeA airline: {planeA.Airline}");
 }
+
+Console.WriteLine($"planeA name: {planeA.Name}");
+Console.WriteLine($"planeA maxAlt: {planeA.MaxAltitude}");
+Console.WriteLine($"planeA numEngine: {planeA.NumEngines}");
+
+Console.WriteLine($@"<div class=""myClass"">");
+
+// <div class="myClass">

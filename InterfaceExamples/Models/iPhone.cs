@@ -3,7 +3,7 @@ public class iPhone : Phone, ISmartphone {
     public List<string> Commands = new List<string>{"Hey Siri", "Check Weather"};
     public List<string> CommandActions = new List<string>{"Listening..", "Displaying Weather"};
 
-    public void BrowseInternet() {
+    public void BrowseInternet() {      
         Console.WriteLine($"Using {iPhone.Browser} to browse internet.");
     }
 
