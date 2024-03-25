@@ -8,12 +8,19 @@ public class Lion : Animal {
         }
     }
     public override bool Eat(string food) {
-        
-        return false;
+        return food == "meat";
     }
 
     public override bool IsHabitatSuitable(string habitat) {
-        
-        return false;
+        return this.SuitableHabitats.Contains(habitat);
+        // bool result = false;
+        // foreach(string elem in this.SuitableHabitats) {
+        //     if(elem == habitat) {
+        //         result = true;
+        //         break;
+        //     }
+        // }
+
+        // return result;
     }
 }
