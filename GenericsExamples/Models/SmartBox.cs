@@ -1,7 +1,7 @@
 
 namespace GenericsExamples.Models;
 
-public class SmartBox<T> {
+public class SmartBox<T> where T : Phone {
     public string Name {get; set;}
     public T Item;
     public List<T> ItemList;
