@@ -11,7 +11,7 @@ Android phoneB = new Android {
             Model = "Samsung Galaxy 23"
         };
 
-ISmartphone phoneC = new iPhone {
+iPhone phoneC = new iPhone {
                     Brand = "Apple", 
                     Model = "iPhone 12"
                 };
@@ -20,11 +20,11 @@ ISmartphone phoneD = new Android {
             Brand = "Google", 
             Model = "Samsung Galaxy 20"
         };
-List<ISmartphone> smartphoneList = new List<ISmartphone> {
+List<iPhone> smartphoneList = new List<iPhone> {
                                         phoneA,
-                                        phoneB,
+                                        // phoneB,
                                         phoneC,
-                                        phoneD
+                                        // phoneD
                                     };
 
 Box<string> boxA = new Box<string>("boxA", "Star Item", words);
@@ -37,3 +37,5 @@ Console.WriteLine(boxB.ToString());
 
 
 Console.WriteLine("\n=======================================");
+SmartBox<iPhone> boxC = new SmartBox<iPhone>("boxC (smartbox)", phoneA, smartphoneList);
+Console.WriteLine(boxC.ToString());

@@ -13,10 +13,10 @@ public class SmartBox<T> where T : Phone {
     }
 
     public override string ToString(){
-        string output = $"{this.Name} Item: {this.Item}\n{this.Name} ItemList:\n";
+        string output = $"{this.Name} Item: {this.Item.Brand}\n{this.Name} ItemList:\n";
         
         foreach(T elem in this.ItemList) {
-            output += $"{elem}\n";
+            output += $"{elem.Model}\n";
         }
 
         return output;
