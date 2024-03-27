@@ -1,10 +1,12 @@
-namespace GenericsExamples.Models;
-public class Box<T> {
-    public string Name { get; set; }
-    public T Item { get; set; }
-    public List<T> ItemList {get; set;}
 
-    public Box(string givenName, T givenItem, List<T> givenItemList) {
+namespace GenericsExamples.Models;
+
+public class SmartBox<T> {
+    public string Name {get; set;}
+    public T Item;
+    public List<T> ItemList;
+
+    public SmartBox(string givenName, T givenItem, List<T> givenItemList) {
         this.Name = givenName;
         this.Item = givenItem;
         this.ItemList = givenItemList;

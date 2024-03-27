@@ -1,3 +1,4 @@
+namespace GenericsExamples.Models;
 public class iPhone : Phone, ISmartphone {
     public static string Browser { get; } = "Safari";
     public List<string> Commands = new List<string>{"Hey Siri", "Check Weather"};
