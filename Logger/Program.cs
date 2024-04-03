@@ -8,6 +8,6 @@ bot.Log("User logged in", 42);
 bot.DisplayLogCount();
 
 Console.WriteLine("====================================");
-bot.Log(DateTime.Now, userA);
+// bot.Log(DateTime.Now, userA);
 
-bot.DisplayLogCount();
+// bot.DisplayLogCount();
